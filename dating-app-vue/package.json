@@ -1,0 +1,44 @@
+{
+  "name": "dating-app-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "alertifyjs": "^1.11.2",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootswatch": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "pace-progressbar": "^1.0.8",
+    "popper.js": "^1.14.7",
+    "tether": "^1.4.5",
+    "tooltip.js": "^1.3.1",
+    "vue": "^2.6.6",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-module-decorators": "^0.9.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.5.0",
+    "@vue/cli-plugin-typescript": "^3.5.0",
+    "@vue/cli-plugin-unit-jest": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "^3.2.1",
+    "vue-template-compiler": "^2.5.21"
+  }
+}

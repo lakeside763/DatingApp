@@ -1,0 +1,102 @@
+[
+  {
+    "Username": "Conley",
+    "Gender": "male",
+    "DateOfBirth": "1976-08-31",
+    "Password": "password",
+    "KnownAs": "Conley",
+    "Created": "2017-07-23",
+    "Introduction": "Ut excepteur consectetur eiusmod excepteur quis. Proident ex enim fugiat esse aliquip Lorem elit veniam. Et ea quis adipisicing elit id aute proident non ullamco non pariatur pariatur quis amet. Adipisicing ad velit enim Lorem qui exercitation qui laborum ex sit irure nostrud id veniam. Sunt occaecat nisi velit eiusmod elit.\r\n",
+    "LookingFor": "Cupidatat ad eiusmod aliqua amet. Aute ullamco magna amet est anim irure ullamco magna sint cillum adipisicing nostrud ut. Ullamco fugiat esse quis exercitation voluptate. Incididunt culpa consequat deserunt exercitation ad dolor. Labore voluptate occaecat pariatur excepteur sint adipisicing cupidatat ipsum adipisicing proident nisi irure eu. Laborum culpa et mollit exercitation veniam pariatur occaecat esse veniam ad voluptate quis qui.\r\n",
+    "Interests": "Commodo incididunt in pariatur reprehenderit elit est ut.",
+    "City": "Calverton",
+    "Country": "Tuvalu",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/65.jpg",
+        "isMain": true,
+        "description": "Amet fugiat dolore proident aliqua aliquip do dolore sint."
+      }
+    ]
+  },
+  {
+    "Username": "Ruiz",
+    "Gender": "male",
+    "DateOfBirth": "1954-05-28",
+    "Password": "password",
+    "KnownAs": "Ruiz",
+    "Created": "2017-01-09",
+    "Introduction": "Aute culpa culpa reprehenderit velit ullamco eu eiusmod proident exercitation labore. Enim laboris qui enim sit Lorem proident. Eiusmod est enim culpa incididunt Lorem fugiat. Enim fugiat culpa occaecat sit. Commodo ipsum eu laboris ullamco in aute.\r\n",
+    "LookingFor": "Consequat reprehenderit nisi velit ipsum elit labore. Dolore nisi aliqua in exercitation anim esse esse. Fugiat enim enim duis Lorem pariatur occaecat ex et cillum do anim. Consequat sit ipsum aliqua irure aliquip mollit consequat. Culpa cillum enim aute nisi dolore officia ipsum velit.\r\n",
+    "Interests": "Incididunt commodo ut do esse nulla enim proident ad pariatur laboris.",
+    "City": "Malo",
+    "Country": "Zaire",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/94.jpg",
+        "isMain": true,
+        "description": "Pariatur aute eiusmod proident ut sit eu sit aliqua ullamco Lorem minim id fugiat."
+      }
+    ]
+  },
+  {
+    "Username": "Gutierrez",
+    "Gender": "male",
+    "DateOfBirth": "1963-12-24",
+    "Password": "password",
+    "KnownAs": "Gutierrez",
+    "Created": "2017-05-07",
+    "Introduction": "Est do est dolor ullamco eiusmod aute laborum ex Lorem nisi consectetur. Ea sint incididunt nostrud qui laborum non in irure cupidatat exercitation mollit nulla. Ad fugiat non ullamco quis in irure id voluptate ullamco non mollit. Veniam ea incididunt in voluptate ut cupidatat anim laboris Lorem cupidatat voluptate.\r\n",
+    "LookingFor": "Culpa tempor qui enim cillum eiusmod irure ad non irure ad in sunt aute. Proident consequat ea laborum elit dolor cupidatat eu. Qui qui occaecat eiusmod in proident occaecat veniam sit est mollit.\r\n",
+    "Interests": "Labore do non proident in anim nulla et dolor irure adipisicing pariatur sit anim.",
+    "City": "Berwind",
+    "Country": "Mayotte",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/6.jpg",
+        "isMain": true,
+        "description": "Velit ad eu consectetur sit nisi quis eu laboris qui proident consectetur reprehenderit amet."
+      }
+    ]
+  },
+  {
+    "Username": "Coleman",
+    "Gender": "male",
+    "DateOfBirth": "1980-07-16",
+    "Password": "password",
+    "KnownAs": "Coleman",
+    "Created": "2017-02-28",
+    "Introduction": "Ex voluptate culpa minim consectetur fugiat aliqua occaecat nisi proident duis in excepteur proident incididunt. Nisi aliquip reprehenderit excepteur aute eiusmod duis. Lorem dolore est elit proident adipisicing id aute elit irure. Irure sint incididunt voluptate sunt pariatur qui veniam non. Aliquip est amet proident ad reprehenderit qui consequat ea in adipisicing.\r\n",
+    "LookingFor": "Ut aute ex reprehenderit consectetur dolor dolore est exercitation sit do consectetur. Do qui laborum fugiat eu aute officia consequat eiusmod laborum. Aute aliqua sit veniam proident sit. Id qui ullamco esse ex ea sit dolor.\r\n",
+    "Interests": "Excepteur laboris nulla ipsum id.",
+    "City": "Urbana",
+    "Country": "Montserrat",
+    "Photos": [
+      {
+        "url": "https://randomuser.me/api/portraits/men/2.jpg",
+        "isMain": true,
+        "description": "Officia esse magna proident aliquip amet."
+      }
+    ]
+  },
+  {
+    "Username": "Reilly",
+    "Gender": "male",
+    "DateOfBirth": "1958-05-28",
+    "Password": "password",
+    "KnownAs": "Reilly",
+    "Created": "2017-02-07",
+    "Introduction": "Cillum excepteur in id magna ut cillum proident ex veniam nostrud laborum. Ut cillum dolore ipsum tempor duis incididunt do minim id in officia consequat eu proident. Nostrud Lorem est ut non commodo irure veniam irure sit. Quis nulla enim in aute. Qui enim excepteur velit proident id anim excepteur aute non culpa reprehenderit deserunt commodo. Qui cupidatat cillum laborum exercitation reprehenderit deserunt incididunt enim esse esse velit pariatur culpa incididunt. Occaecat voluptate quis eu irure.\r\n",
+    "LookingFor": "Duis Lorem anim veniam nostrud dolor ad do voluptate. Aliquip fugiat laboris occaecat incididunt nostrud dolore qui commodo ad consectetur fugiat id fugiat. Consectetur cupidatat mollit qui adipisicing quis id ut. Proident amet anim ut enim Lorem. Mollit laboris commodo in do elit occaecat est sit nisi tempor enim. Consequat nisi ipsum dolor amet qui consequat quis do excepteur cillum ad amet. Ut sit ullamco deserunt exercitation reprehenderit.\r\n",
+    "Interests": "Elit aliquip consequat labore veniam pariatur labore irure amet magna nisi pariatur.",
+    "City": "Belmont",
+    "Country": "Heard and McDonald Islands",
+    "Photos": [
+					{
+						"url": "https://randomuser.me/api/portraits/men/81.jpg",
+						"isMain": true,
+						"description": "Esse qui amet incididunt nostrud et Lorem elit labore consectetur."
+					}
+    ]
+  }
+]
