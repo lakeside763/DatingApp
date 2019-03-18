@@ -13,7 +13,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace DatingApp.API.Controllers
 {
 	[Route("api/[controller]")]
-	[ApiController]
+	[ApiController] // it helps to perform ModelState check
 	public class AuthController : ControllerBase
 	{
 		private readonly IAuthRepository _repo;
@@ -25,8 +25,13 @@ namespace DatingApp.API.Controllers
 		}
 
 		[HttpPost("register")]
+		// [FormBody]
 		public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
 		{
+			// [ApiController] not used
+			// if(!ModelState.IsValid)
+			// 	return BadRequest(ModelState);
+
 			userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
 
 			if (await _repo.UserExists(userForRegisterDto.Username))
@@ -57,7 +62,8 @@ namespace DatingApp.API.Controllers
 			new Claim(ClaimTypes.Name, userFromRepo.Username)
 			};
 
-			var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
+			var key = new SymmetricSecurityKey(Encoding.UTF8
+				.GetBytes(_config.GetSection("AppSettings:Token").Value));
 
 			var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
@@ -72,8 +78,7 @@ namespace DatingApp.API.Controllers
 
 			var token = tokenHandler.CreateToken(tokenDescriptor);
 
-			return Ok(new
-			{
+			return Ok(new {
 				token = tokenHandler.WriteToken(token)
 			});
 			
