@@ -1,5 +1,7 @@
 import axios from 'axios';
-import { Value, ValueResponse, UserLogin, UserResponse } from '../models/users';
+import toast from './toast';
+import users from '../modules/users';
+import { Value, ValueResponse, UserLogin, UserResponse, ResponseToken } from '../models/users';
 
 const auth = 'Authorization';
 const bearerToken = `Bearer ${localStorage.getItem('token')}`;
@@ -32,16 +34,28 @@ export async function GetValues() {
 
 export async function Login(userLogin: UserLogin) {
     try {
-        const response = await DatingAppApi.post('/users', {userLogin});
+        const response = await DatingAppApi.post('/auth/login', userLogin);
         if (response) {
-            localStorage.setItem('token', response.data.token);
-            localStorage.setItem('userData', response.data);
-            axios.defaults.headers.common[auth] = bearerToken;
+            localStorage.setItem('token', JSON.stringify(response.data));
         }
-        return (response.data as UserResponse).user;
+        return response.data as ResponseToken;
     } catch (error) {
-        // console.log(error);
-        return error;
+        return handleError(error);
     }
 }
+// export async function Login(userLogin: UserLogin): Promise<any> {
+//     await DatingAppApi.post('/auth/login', userLogin).then((response) => {
+//         localStorage.setItem('token', JSON.stringify(response.data));
+//         return response.data as ResponseToken;
+//     }).catch((handleError));
+// }
 
+export async function Register(userLogin: UserLogin): Promise<any> {
+    await DatingAppApi.post('/auth/register', userLogin).then((response) => {
+        return response;
+    }).catch((handleError));
+}
+
+function handleError(error: any) {
+    toast.error(error.response.data, 'Error', 500000);
+}

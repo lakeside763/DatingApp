@@ -7,7 +7,8 @@
           </ul>
         </div> -->
         <div class="col-md-12 text-center" style="margin-top: 50px;">
-          <h3>Welcome {{tokenData.unique_name}}</h3>
+          <h3>Welcome to Online Dating App</h3>
+          <h5><router-link class="text-primary" to="/register">Sign Up</router-link></h5>
         </div>
       </div>
     </div>
@@ -17,20 +18,18 @@
 import { Component, Vue } from 'vue-property-decorator';
 import users from '../store/modules/users';
 import { Value } from '../store/models/users.d';
-import jwt from 'jsonwebtoken';
 
 @Component({
   components: {
   },
 })
 export default class Home extends Vue {
-  private tokenData: {} | null = {};
+  private values: Value[] = [];
 
-  created() {
-    if (users.token.token) {
-      const token = users.token.token;
-      this.tokenData = jwt.decode(token);
-    }
+  public created() {
+      users.values().then(() => {
+        this.values = users.value;
+      });
   }
 }
 </script>

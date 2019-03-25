@@ -10,12 +10,19 @@ export interface ValueResponse {
 // }
 
 export interface User {
+    id: number;
     username: string;
-    email: string;
-    password: string;
-    token: string;
-    firstName: string;
-    lastName: string;
+    knownAs: string;
+    age: number;
+    gender: string;
+    created: Date;
+    lastActive: Date;
+    photoUrl: string;
+    city: string;
+    country: string;
+    interests?: string;
+    introduction?: string;
+    photos?: Photo[];
 }
 
 export interface UserResponse {
@@ -26,4 +33,17 @@ export interface UserLogin {
     username: string;
     password: string;
 }
+
+export interface Photo {
+    id: number;
+    username: string;
+    description: string;
+    dateAdded: Date;
+    isMain: boolean;
+  }
+
+  export interface ResponseToken {
+      token: string;
+  }
+
 

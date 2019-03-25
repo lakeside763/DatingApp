@@ -20,6 +20,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using DatingApp.API.Configuration;
 
 namespace DatingApp.API
 {
@@ -84,8 +85,9 @@ namespace DatingApp.API
 
 			// app.UseHttpsRedirection();
 			// seeder.SeedUsers();
-			app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-			app.UseAuthentication();
+			app.UseCors(x => x.WithOrigins("http://localhost:8080", "http://localhost:4200")
+                .AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            app.UseAuthentication();
 			app.UseMvc();
 		}
 	}

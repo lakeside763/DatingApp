@@ -10,6 +10,11 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+@import '../node_modules/izitoast/dist/css/iziToast.css';
+
+.iziToast-wrapper-topCenter{
+  top: 40px !important;
+}
 </style>
 
 <script lang="ts">

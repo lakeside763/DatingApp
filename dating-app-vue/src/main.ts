@@ -5,12 +5,7 @@ import store from './store';
 import jQuery from 'jquery';
 const $ = jQuery;
 
-
-
-
-
 Vue.config.productionTip = false;
-
 new Vue({
   router,
   store,
