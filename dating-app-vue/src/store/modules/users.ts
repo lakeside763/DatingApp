@@ -112,7 +112,7 @@ class UsersModule extends VuexModule {
     }
     @Action
     public decodedTokenData() {
-        console.log(this.token.token);
+        // console.log(this.token.token);
         const decodedToken = jwt.decode(this.token.token);
         return decodedToken;
     }

@@ -1,10 +1,11 @@
 import axios from 'axios';
+import Axios from 'axios-observable';
 import toast from './toast';
 import users from '../modules/users';
 import { Value, ValueResponse, UserLogin, UserResponse, ResponseToken } from '../models/users';
 
 const auth = 'Authorization';
-const bearerToken = `Bearer ${localStorage.getItem('token')}`;
+const bearerToken = `Bearer ${localStorage.getItem('setToken')}`;
 
 export const LoginRegisterApi = axios.create({
     baseURL: 'http://localhost:4000/api',
@@ -14,7 +15,6 @@ export const DatingAppApi = axios.create({
     baseURL: 'http://localhost:4000/api',
     // headers: {Authorization: `Bearer ${localStorage.getItem('token')}`},
 });
-
 export function setToken() {
     DatingAppApi.defaults.headers.common[auth] = bearerToken;
 }
@@ -37,6 +37,7 @@ export async function Login(userLogin: UserLogin) {
         const response = await DatingAppApi.post('/auth/login', userLogin);
         if (response) {
             localStorage.setItem('token', JSON.stringify(response.data));
+            localStorage.setItem('setToken', response.data.token);
         }
         return response.data as ResponseToken;
     } catch (error) {

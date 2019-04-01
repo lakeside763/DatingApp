@@ -4,7 +4,7 @@
         <!-- <div class="col-md-12">
           <ul class="">
             <li v-for="(value, index) in values" :key="index" class="list-item">{{value.name}}</li>
-          </ul>
+          </ul>p
         </div> -->
         <div class="col-md-12 text-center" style="margin-top: 50px;">
           <h3>Welcome to Online Dating App</h3>

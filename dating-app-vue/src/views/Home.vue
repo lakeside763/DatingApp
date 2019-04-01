@@ -18,6 +18,10 @@ import { Component, Vue } from 'vue-property-decorator';
 import users from '../store/modules/users';
 import { Value } from '../store/models/users.d';
 import jwt from 'jsonwebtoken';
+// import { GetValues } from '../store/api/api';
+import { GetValues } from '../services/user-api';
+import { Observable, Subscription } from 'rxjs';
+import { error } from 'util';
 
 @Component({
   components: {
@@ -25,12 +29,31 @@ import jwt from 'jsonwebtoken';
 })
 export default class Home extends Vue {
   private tokenData: {} | null = {};
+  private values: any;
+  private valuesSub$!: Subscription;
 
-  created() {
+  public async getValues() {
+    this.valuesSub$ = await GetValues().subscribe((response) => {
+      this.values = response.data;
+      // console.log(this.values);
+    });
+  }
+  //  private GetValues$ = Observable.create(() => {
+  //   GetValues().subscribe((response) => {
+  //       console.log(response);
+  //     })
+  // });
+
+  public created() {
     if (users.token.token) {
       const token = users.token.token;
       this.tokenData = jwt.decode(token);
     }
+    this.getValues();
+  }
+
+  public destroyed() {
+    this.valuesSub$.unsubscribe();
   }
 }
 </script>

@@ -4,6 +4,8 @@ import router from './router';
 import store from './store';
 import jQuery from 'jquery';
 const $ = jQuery;
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
 
 Vue.config.productionTip = false;
 new Vue({
@@ -11,3 +13,4 @@ new Vue({
   store,
   render: (h) => h(App),
 }).$mount('#app');
+

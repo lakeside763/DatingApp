@@ -71,9 +71,9 @@ export default class AppNavBar extends Vue {
   }
 
   public created() {
-    if (users.token.token){
+    if (users.token.token) {
       this.loginStatus = true;
-    };
+    }
     this.loginTokenData();
     this.isTokenValid();
   }
@@ -82,7 +82,7 @@ export default class AppNavBar extends Vue {
     if (users.token.token) {
       const tokenData = jwt.decode(users.token.token);
       const tokenDataStringinfy = JSON.stringify(tokenData);
-      const tokenExp = JSON.parse(tokenDataStringinfy).exp
+      const tokenExp = JSON.parse(tokenDataStringinfy).exp;
       if (tokenExp < new Date().getTime) {
           this.$router.push('/');
           this.Logout();
@@ -98,10 +98,10 @@ export default class AppNavBar extends Vue {
       username: this.username,
       password: this.password,
     }).then((res) => {
-        if (users.token.token === (null || undefined)){
-          this.loginStatus = false; 
+        if (users.token.token === (null || undefined)) {
+          this.loginStatus = false;
           return false;
-        } 
+        }
         this.loginTokenData();
         this.$router.push('/home');
         this.loginStatus = true;

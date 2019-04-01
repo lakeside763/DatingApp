@@ -1,3 +1,4 @@
+import { Photo } from './photo';
 export interface Value {
     name: string;
 }
@@ -22,7 +23,17 @@ export interface User {
     country: string;
     interests?: string;
     introduction?: string;
+    lookingFor?: string;
     photos?: Photo[];
+}
+
+export interface ProfileData {
+    knownAs: string;
+    city: string;
+    country: string;
+    interests?: string;
+    introduction?: string;
+    lookingFor?: string;
 }
 
 export interface UserResponse {
@@ -33,17 +44,10 @@ export interface UserLogin {
     username: string;
     password: string;
 }
-
-export interface Photo {
-    id: number;
-    username: string;
-    description: string;
-    dateAdded: Date;
-    isMain: boolean;
-  }
-
-  export interface ResponseToken {
+export interface ResponseToken {
       token: string;
-  }
-
+}
+export interface Image {
+    image: string;
+}
 

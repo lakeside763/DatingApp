@@ -35,7 +35,6 @@ export default class Register extends Vue {
     private errorAlert: boolean = false;
     private errorMessage: any;
     private successMessage: string = '';
-    
     public Register() {
         users.register({
             username: this.username,
